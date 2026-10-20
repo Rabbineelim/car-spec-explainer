@@ -1,0 +1,17 @@
+[project]
+name = "car-spec-explainer"
+version = "0.1.0"
+description = "Explain car specs (torque vs hp, drivetrain, power-to-weight) in plain English"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+
+[project.scripts]
+car-spec-explainer = "car_spec_explainer.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["car_spec_explainer"]
